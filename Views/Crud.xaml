@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ktigses6api.Views.Crud"
+             Title="Crud">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label 
+            Text="CRUD KEVIN TIGSE API"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ListView x:Name="lvUsu">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0"
+                                       Grid.Column="0"
+                                       Text="CODIGO">
+                                </Label>
+
+                                <Label Grid.Row="0"
+                                       Grid.Column="1"
+                                       Text="NOMBRE">
+                                </Label>
+
+
+                                <Label Grid.Row="0"
+                                       Grid.Column="2"
+                                       Text="EMAIL">
+                                </Label>
+
+                                <Label x:Name="lblId" Text="{Binding Id}" Grid.Row="1" Grid.Column="0"></Label>
+                                <Label x:Name="lblNombre" Text="{Binding Nombre}" Grid.Row="1" Grid.Column="1"></Label>
+                                <Label x:Name="lblEmail" Text="{Binding Email}" Grid.Row="1" Grid.Column="2"></Label>
+
+                            </Grid>
+                            
+                          
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </VerticalStackLayout>
+</ContentPage>

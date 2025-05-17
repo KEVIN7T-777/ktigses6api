@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ktigses6api.Views.Mascota"
+             Title="Mascota">
+    <VerticalStackLayout Spacing="20" Padding="20">
+        <Label 
+            Text="API MASCOTA - KEVIN TIGSE - TAREA S6"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ListView x:Name="lvMas">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label  Text="{Binding Raza}"></Label>
+                            <Label Text="{Binding Origen}"></Label>
+                            <Label Text="{Binding Descripcion}"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </VerticalStackLayout>
+</ContentPage>
