@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ktigses6api.Views.UpdateEstudent"
+             Title="UpdateEstudent">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label 
+            Text="ACTUALIZAR / ELIMINAR USUARIO"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtCodigo"
+               IsReadOnly="True">
+        </Entry>
+
+        <Entry x:Name="txtNombre"
+        Placeholder="INGRESE NOMBRE">
+
+        </Entry>
+
+        <Entry x:Name="txtCorreo"
+ Placeholder="INGRESE CORREO">
+
+        </Entry>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnUpdate"
+Text="ACTUALIZAR"
+Clicked="btnUpdate_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0">
+            </Button>
+
+            <Button x:Name="btnBorrar"
+Text="ELIMINAR"
+Clicked="btnBorrar_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="1">
+            </Button>
+
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>

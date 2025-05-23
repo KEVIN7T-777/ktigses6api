@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ktigses6api.Views.NewEstudent"
+             Title="NewEstudent">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label 
+            Text="NUEVO USUARIO"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtNombre"
+               Placeholder="INGRESE NOMBRE">
+            
+        </Entry>
+
+        <Entry x:Name="txtCorreo"
+        Placeholder="INGRESE CORREO">
+
+        </Entry>
+
+        <Button x:Name="btnNuevo"
+        Text="AÑADIR USUARIO"
+        Clicked="btnNuevo_Clicked">
+
+        </Button>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

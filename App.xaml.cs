@@ -12,7 +12,7 @@ namespace ktigses6api
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new Views.Crud());
+            return new Window(new NavigationPage(new Views.Crud()));
         }
     }
 }
